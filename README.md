@@ -27,6 +27,7 @@ This solution is implemented using MVC5 application with **Web API 2 and Entity 
  
 3. **Dto** contains the data transfer objects that would be returned to the client
 
+4. **Migrations** contains the migration scripts which was used to create the database using EF code first workflow. 
 
 # Future Improvements
 
@@ -47,11 +48,11 @@ One of the most powerful api testing tool, Swagger, has been integrated to the s
 
 3. Upon clicking on Flights, you would notice both the API's exposed by the FlightsController. Now, click on **/api/getallflights**. You will see the below screen:
 
-![Output] (./Output/get_all_flights.jpg)
+![Output](./Output/get_all_flights.jpg)
 
 4. Click on the **Try It Out** button and check the response
 
-![Output] (./Output/response.jpg)
+![Output](./Output/response.jpg)
 
 Similarly, other API's can also be tested.
 
@@ -69,8 +70,42 @@ Similarly, other API's can also be tested.
   http://localhost:6595/api/flight/checkavailability?givenDate=3%2F2%2F2018%204%3A00%3A00%20AM&endDate=3%2F4%2F2018%209%3A00%3A00%20AM&noOfPassengers=1
 
   ```
+![Output](./Output/check_availability.jpg)
 
-![Output]  (./Output/check_availability.jpg)
+
+### 3. Search Booking:
+
+**Example data:**
+
+
+```yml
+  {
+	passengerName: "Ganesh",
+	flightNumber: "QF11"
+  }
+  
+  http://localhost:6595/api/booking/search
+
+  ```
+  ![Output](./Output/search_booking.jpg)
+  
+
+### 4. Make Booking:
+
+**Example data:**
+
+
+```yml
+  {
+	passengerName: "Paul",
+	numberOfPassengers: 1,
+	flightNumber: "QF11",
+	flightStartTime: "3/4/2018 4:00:00 AM"
+  }
+  
+  http://localhost:6595/api/booking/create
+
+  ```
 
 # Instructions
 
