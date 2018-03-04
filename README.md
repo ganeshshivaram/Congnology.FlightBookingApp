@@ -43,7 +43,7 @@ One of the most powerful api testing tool, Swagger, has been integrated to the s
 
 2. Now try to launch swagger by appending "/swagger" to the url i.e. http://localhost:6595/swagger. You would notice the below screen:
 
-![Output] (./Output/swagger_launch.jpg)
+(./Output/swagger_launch.jpg)
 
 3. Upon clicking on Flights, you would notice both the API's exposed by the FlightsController. Now, click on **/api/getallflights**. You will see the below screen:
 
@@ -70,7 +70,7 @@ Similarly, other API's can also be tested.
 
   ```
 
- ![Output] (./Output/check_availability.jpg)
+![Output]  (./Output/check_availability.jpg)
 
 # Instructions
 
