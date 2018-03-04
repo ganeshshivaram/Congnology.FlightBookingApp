@@ -70,7 +70,7 @@ Similarly, other API's can also be tested.
   http://localhost:6595/api/flight/checkavailability?givenDate=3%2F2%2F2018%204%3A00%3A00%20AM&endDate=3%2F4%2F2018%209%3A00%3A00%20AM&noOfPassengers=1
 
   ```
-![Output](./Output/check_availability.JPG)
+![Output](./Output/check_availabilty.JPG)
 
 
 ### 3. Search Booking:
@@ -79,10 +79,10 @@ Similarly, other API's can also be tested.
 
 
 ```yml
-  {
-	passengerName: "Ganesh",
-	flightNumber: "QF11"
-  }
+{
+passengerName: "Ganesh",
+flightNumber: "QF11"
+}
   
   http://localhost:6595/api/booking/search
 
@@ -97,12 +97,12 @@ Similarly, other API's can also be tested.
 
 
 ```yml
-  {
-	passengerName: "Paul",
-	numberOfPassengers: 1,
-	flightNumber: "QF11",
-	flightStartTime: "3/4/2018 4:00:00 AM"
-  }
+{
+passengerName: "Paul",
+numberOfPassengers: 1,
+flightNumber: "QF11",
+flightStartTime: "3/4/2018 4:00:00 AM"
+}
   
   http://localhost:6595/api/booking/create
 
